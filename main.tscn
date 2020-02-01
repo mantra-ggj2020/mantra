@@ -7,9 +7,9 @@
 [ext_resource path="res://Resources/Suelo 1.png" type="Texture" id=5]
 [ext_resource path="res://Resources/Suelo 2.png" type="Texture" id=6]
 
-[sub_resource type="ShaderMaterial" id=1]
+[sub_resource type="ShaderMaterial" id=3]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 4 ) ],
 "loop": true,
@@ -23,7 +23,7 @@ script = ExtResource( 2 )
 [node name="Generamantra" parent="." instance=ExtResource( 3 )]
 
 [node name="Meditador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 536.248, 348.176 )
+position = Vector2( 529.786, 445.103 )
 
 [node name="AscendButton" type="Button" parent="."]
 margin_left = 714.453
@@ -49,20 +49,22 @@ __meta__ = {
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 253.11, 472.67 )
+input_pickable = false
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-material = SubResource( 1 )
+material = SubResource( 3 )
+position = Vector2( 0, -81.6452 )
+scale = Vector2( 1, 1.68759 )
 polygon = PoolVector2Array( -205.915, 77.119, 769.476, 72.8185, 770.673, 106.947, 11.1232, 105.489, -172.162, 107.718, -207.189, 108.144 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
-position = Vector2( 272.068, -82.7581 )
-scale = Vector2( 1, 0.861128 )
-frames = SubResource( 2 )
+position = Vector2( 260.168, -82.7581 )
+scale = Vector2( 1.60244, 0.861128 )
+frames = SubResource( 4 )
 animation = "Grassy"
-frame = 2
 playing = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
