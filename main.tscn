@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Meditador.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Generamantra.tscn" type="PackedScene" id=2]
 
 [node name="Main" type="Node2D"]
 
@@ -28,5 +29,7 @@ text = "Descend"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Generamantra" parent="." instance=ExtResource( 2 )]
 [connection signal="pressed" from="AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
 [connection signal="pressed" from="DescendButton" to="Meditador" method="_on_DescendButton_pressed"]
