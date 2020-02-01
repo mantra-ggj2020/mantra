@@ -1,6 +1,27 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Meditador.gd" type="Script" id=1]
+[ext_resource path="res://Resources/ICGJ19_squid1.png" type="Texture" id=2]
 
 [node name="Meditador" type="Node2D"]
+position = Vector2( -12.5876, -5.03506 )
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -2.71107, 2.84515 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Culo" type="Area2D" parent="."]
+
+[node name="Collider" type="CollisionPolygon2D" parent="Culo"]
+polygon = PoolVector2Array( -5.68594, -6.52788, -5.99329, 3.30755, -5.99329, 6.68848, 4.7642, 6.99583, 6.9157, 1.15605, 6.9157, -7.14259, -1.69029, -5.91316 )
+[connection signal="area_entered" from="Culo" to="." method="_on_Culo_area_entered"]
