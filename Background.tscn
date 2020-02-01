@@ -80,8 +80,8 @@ scale = Vector2( 2.213, 2.32471 )
 texture = ExtResource( 4 )
 
 [node name="Nube 3" type="Sprite" parent="."]
-position = Vector2( 659.038, 234.279 )
-scale = Vector2( 2.213, 2.32471 )
+position = Vector2( 740.858, 267.007 )
+scale = Vector2( 1.8983, 2.47729 )
 texture = ExtResource( 6 )
 
 [node name="Nube 4" type="Sprite" parent="."]
