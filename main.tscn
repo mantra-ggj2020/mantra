@@ -6,3 +6,27 @@
 
 [node name="Meditador" parent="." instance=ExtResource( 1 )]
 position = Vector2( 536.248, 348.176 )
+
+[node name="AscendButton" type="Button" parent="."]
+margin_left = 714.453
+margin_top = 239.59
+margin_right = 773.453
+margin_bottom = 259.59
+rect_pivot_offset = Vector2( -3837.42, -713.692 )
+text = "Ascend"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DescendButton" type="Button" parent="."]
+margin_left = 714.453
+margin_top = 347.514
+margin_right = 782.453
+margin_bottom = 367.514
+rect_pivot_offset = Vector2( -3837.42, -713.692 )
+text = "Descend"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
+[connection signal="pressed" from="DescendButton" to="Meditador" method="_on_DescendButton_pressed"]

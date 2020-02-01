@@ -21,7 +21,8 @@ func _process(delta):
 
 
 	
-func _elevate(delta):
+func _ascend(focusvalue):
+	_move(-focusvalue)
 	#position+=	Vector2(0,delta*speed)
 	
 	
@@ -29,13 +30,13 @@ func _elevate(delta):
 	
 func _move(focusvalue):
 	tween.interpolate_property(self, "position",
-		self.position , Vector2(self.position.x, self.position.y - focusvalue), 1,
+		self.position , Vector2(self.position.x, self.position.y + focusvalue), 1,
 		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	tween.start()
 	
 	
-func _descend():
-	position-= Vector2 (0,-1)
+func _descend(focusvalue):
+	_move(focusvalue)
 	pass
 	
 	
@@ -46,3 +47,13 @@ func _descend():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_AscendButton_pressed():
+	_ascend(100)
+	pass # Replace with function body.
+
+
+func _on_DescendButton_pressed():
+	_descend(100)
+	pass # Replace with function body.
