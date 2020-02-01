@@ -6,8 +6,10 @@ var tiempoExp
 
 var inputstr = ''
 onready var tween = get_node("Tween")
+signal completado()
 
 func _ready():
+	connect('completado', get_parent(), '_on_Mantra_completado')
 	set_process_input(true)
 	get_node("Texto").text = texto
 	get_node("Timer").set_wait_time(tiempoExp)
@@ -31,6 +33,7 @@ func _on_Timer_timeout():
 	falla()
 
 func completa():
+	emit_signal("completado")
 	inputstr = ''
 	self.queue_free()
 	print("Completa Mantra")
