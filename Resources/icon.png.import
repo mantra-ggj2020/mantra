@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ICGJ19_squid1.png-5ffb79ff3fa379b82494c22b6e3ee9a7.stex"
+path="res://.import/icon.png-9a68011a69ba507a84f3ed52914801c7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ICGJ19_squid1.png"
-dest_files=[ "res://.import/ICGJ19_squid1.png-5ffb79ff3fa379b82494c22b6e3ee9a7.stex" ]
+source_file="res://Resources/icon.png"
+dest_files=[ "res://.import/icon.png-9a68011a69ba507a84f3ed52914801c7.stex" ]
 
 [params]
 

@@ -1,11 +1,12 @@
 extends Node2D
-
+var sad_monk = preload("res://Resources/dibujo 1 pintado.png")
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 var speed = 20
 onready var tween = get_node("Tween")
+onready var sprite = get_node("Sprite")
 #onready var meditador = get_parent();
 
 # Called when the node enters the scene tree for the first time.
@@ -15,7 +16,6 @@ func _ready():
 	pass # Replace with function body.
 	
 func _process(delta):
-	#_elevate(delta);
 	pass
 	
 
@@ -23,9 +23,6 @@ func _process(delta):
 	
 func _ascend(focusvalue):
 	_move(-focusvalue)
-	#position+=	Vector2(0,delta*speed)
-	
-	
 	pass
 	
 func _move(focusvalue):
@@ -57,4 +54,5 @@ func _on_DescendButton_pressed():
 
 func _on_Culo_area_entered(area):
 	print("ping")
+	sprite.set_texture(sad_monk)
 	pass # Replace with function body.
