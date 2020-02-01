@@ -19,3 +19,9 @@ __meta__ = {
 }
 
 [node name="Tween" type="Tween" parent="."]
+
+[node name="Culo" type="Area2D" parent="."]
+
+[node name="Collider" type="CollisionPolygon2D" parent="Culo"]
+polygon = PoolVector2Array( -5.68594, -6.52788, -5.99329, 3.30755, -5.99329, 6.68848, 4.7642, 6.99583, 6.9157, 1.15605, 6.9157, -7.14259, -1.69029, -5.91316 )
+[connection signal="area_entered" from="Culo" to="." method="_on_Culo_area_entered"]

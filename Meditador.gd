@@ -39,10 +39,6 @@ func _descend(focusvalue):
 	_move(focusvalue)
 	pass
 	
-	
-
-
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
@@ -56,4 +52,9 @@ func _on_AscendButton_pressed():
 
 func _on_DescendButton_pressed():
 	_descend(100)
+	pass # Replace with function body.
+
+
+func _on_Culo_area_entered(area):
+	print("ping")
 	pass # Replace with function body.
