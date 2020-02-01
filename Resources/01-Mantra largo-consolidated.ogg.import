@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/01-Mantra largo-consolidated.ogg-69b22c18c9cad8a99ab232c14ea31a4f.oggstr"
+
+[deps]
+
+source_file="res://Resources/01-Mantra largo-consolidated.ogg"
+dest_files=[ "res://.import/01-Mantra largo-consolidated.ogg-69b22c18c9cad8a99ab232c14ea31a4f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

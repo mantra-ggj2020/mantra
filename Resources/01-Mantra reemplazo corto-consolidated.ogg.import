@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/01-Mantra reemplazo corto-consolidated.ogg-fc59510c2ca223618abe9993c6f9d820.oggstr"
+
+[deps]
+
+source_file="res://Resources/01-Mantra reemplazo corto-consolidated.ogg"
+dest_files=[ "res://.import/01-Mantra reemplazo corto-consolidated.ogg-fc59510c2ca223618abe9993c6f9d820.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
