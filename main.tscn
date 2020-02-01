@@ -8,9 +8,9 @@
 [ext_resource path="res://Resources/Suelo 2.png" type="Texture" id=6]
 [ext_resource path="res://Background.tscn" type="PackedScene" id=7]
 
-[sub_resource type="ShaderMaterial" id=3]
+[sub_resource type="ShaderMaterial" id=1]
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 4 ) ],
 "loop": true,
@@ -56,7 +56,7 @@ __meta__ = {
 }
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-material = SubResource( 3 )
+material = SubResource( 1 )
 position = Vector2( 0, -81.6452 )
 scale = Vector2( 1, 1.68759 )
 polygon = PoolVector2Array( -205.915, 77.119, 769.476, 72.8185, 770.673, 106.947, 11.1232, 105.489, -172.162, 107.718, -207.189, 108.144 )
@@ -64,8 +64,9 @@ polygon = PoolVector2Array( -205.915, 77.119, 769.476, 72.8185, 770.673, 106.947
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
 position = Vector2( 260.168, -82.7581 )
 scale = Vector2( 1.60244, 0.861128 )
-frames = SubResource( 4 )
+frames = SubResource( 2 )
 animation = "Grassy"
+frame = 1
 playing = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -77,5 +78,10 @@ margin_left = 2.72217
 margin_top = -5.00218
 margin_right = 2.72217
 margin_bottom = -5.00218
+
+[node name="dibujo 1 pintado" parent="Control" index="8"]
+visible = false
 [connection signal="pressed" from="AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
 [connection signal="pressed" from="DescendButton" to="Meditador" method="_on_DescendButton_pressed"]
+
+[editable path="Control"]
