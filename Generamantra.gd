@@ -23,7 +23,8 @@ func generar(mantra):
 	mantraActual.concentracion = mantra.concentracion
 	mantraActual.tiempoExp = mantra.tiempoExp
 	mantraActual.position = Vector2(rand_range(300,screen_size.x-300), rand_range(300,screen_size.y-300))
-	get_tree().get_root().call_deferred("add_child", mantraActual)
+#	get_tree().get_root().call_deferred("add_child", mantraActual)
+	call_deferred("add_child", mantraActual)
 	timer.set_wait_time(mantra.tiempoExp)
 	timer.start()
 
