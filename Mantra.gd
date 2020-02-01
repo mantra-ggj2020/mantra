@@ -31,7 +31,10 @@ func completa():
 	inputstr = ''
 	self.queue_free()
 	print("Completa Mantra")
+	get_tree().get_root().get_node("Main")._si(concentracion)
+	
 
 func falla():
 	self.queue_free()
 	print("Falló")
+	get_tree().get_root().get_node("Main")._no(concentracion)

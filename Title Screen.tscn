@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Start.gd" type="Script" id=1]
 [ext_resource path="res://Test Logo mantra.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://dibujo 1 pintado.png" type="Texture" id=4]
 [ext_resource path="res://Start.png" type="Texture" id=5]
 [ext_resource path="res://Creditos.png" type="Texture" id=6]
+[ext_resource path="res://Menu.gd" type="Script" id=7]
 
 [node name="Pantalla De Inicio" type="Control"]
 anchor_right = 1.0
@@ -24,6 +25,7 @@ margin_top = -209.0
 margin_right = 320.0
 margin_bottom = 112.0
 alignment = 1
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -60,8 +62,8 @@ __meta__ = {
 }
 
 [node name="Botones" type="VBoxContainer" parent="HBoxContainer"]
-margin_right = 700.0
-margin_bottom = 408.0
+margin_right = 729.0
+margin_bottom = 416.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
@@ -93,3 +95,4 @@ action_mode = 0
 icon = ExtResource( 3 )
 flat = true
 script = ExtResource( 1 )
+[connection signal="pressed" from="HBoxContainer/Botones/Start" to="Menu" method="_on_Start_pressed"]
