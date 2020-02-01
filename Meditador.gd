@@ -55,4 +55,5 @@ func _on_DescendButton_pressed():
 func _on_Culo_area_entered(_area):
 	print("ping")
 	sprite.set_texture(sad_monk)
+	tween.stop_all()
 	pass # Replace with function body.
