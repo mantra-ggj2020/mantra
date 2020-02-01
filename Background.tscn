@@ -36,6 +36,53 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = 0
+scroll_limit_begin = Vector2( 0, -1000 )
+scroll_limit_end = Vector2( 0, 1000 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 0, 800 )
+
+[node name="Nube 1" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 877.237, 12.8781 )
+scale = Vector2( 2.7425, 3.79615 )
+texture = ExtResource( 5 )
+
+[node name="Nube 2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 222.638, 114.744 )
+scale = Vector2( 2.213, 2.32471 )
+texture = ExtResource( 4 )
+
+[node name="Nube 3" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 740.858, 267.007 )
+scale = Vector2( 1.8983, 2.47729 )
+texture = ExtResource( 6 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+layer = 0
+scroll_limit_begin = Vector2( 0, -1000 )
+scroll_limit_end = Vector2( 0, 1000 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2( 1, 3 )
+motion_mirroring = Vector2( 0, 800 )
+
+[node name="Nube 6" type="Sprite" parent="ParallaxBackground2/ParallaxLayer2"]
+position = Vector2( 335.966, 287.29 )
+scale = Vector2( 2.7425, 3.79615 )
+texture = ExtResource( 5 )
+
+[node name="Nube 5" type="Sprite" parent="ParallaxBackground2/ParallaxLayer2"]
+position = Vector2( 524.743, -89.1767 )
+scale = Vector2( 2.213, 2.32471 )
+texture = ExtResource( 4 )
+
+[node name="Nube 4" type="Sprite" parent="ParallaxBackground2/ParallaxLayer2"]
+position = Vector2( 886.875, 151.2 )
+scale = Vector2( 1.8983, 2.47729 )
+texture = ExtResource( 6 )
+
 [node name="Polygon2D" type="Polygon2D" parent="."]
 position = Vector2( -1.43295, 598.387 )
 rotation = -1.5708
@@ -52,35 +99,22 @@ position = Vector2( 510.998, 396.618 )
 scale = Vector2( 1.60022, 0.861128 )
 frames = SubResource( 3 )
 animation = "Grassy"
-frame = 2
 playing = true
 
-[node name="Nube 1" type="Sprite" parent="."]
-position = Vector2( 877.237, 12.8781 )
-scale = Vector2( 2.7425, 3.79615 )
-texture = ExtResource( 5 )
-
-[node name="Nube 2" type="Sprite" parent="."]
-position = Vector2( 222.638, 114.744 )
-scale = Vector2( 2.213, 2.32471 )
-texture = ExtResource( 4 )
-
-[node name="Nube 3" type="Sprite" parent="."]
-position = Vector2( 740.858, 267.007 )
-scale = Vector2( 1.8983, 2.47729 )
-texture = ExtResource( 6 )
-
 [node name="Nube 4" type="Sprite" parent="."]
+visible = false
 position = Vector2( 266.846, -518.176 )
 scale = Vector2( 2.213, 2.32471 )
 texture = ExtResource( 7 )
 
 [node name="Nube 5" type="Sprite" parent="."]
+visible = false
 position = Vector2( 354.558, -870.709 )
 scale = Vector2( 2.89225, 3.85302 )
 texture = ExtResource( 8 )
 
 [node name="Nube 6" type="Sprite" parent="."]
+visible = false
 position = Vector2( 824.175, -468.534 )
 scale = Vector2( 2.213, 2.32471 )
 texture = ExtResource( 9 )

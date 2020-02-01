@@ -32,7 +32,7 @@ func _checkLink():
 	pass	
 
 func _drop():
-	 get_parent().get_node("Meditador").fall()
+	 get_parent().get_node("Meditador")._fall()
 
 
 
