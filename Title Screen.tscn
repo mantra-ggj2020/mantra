@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Start.gd" type="Script" id=1]
-[ext_resource path="res://Test Logo mantra.png" type="Texture" id=2]
-[ext_resource path="res://Config.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Test Logo mantra.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Config.png" type="Texture" id=3]
 [ext_resource path="res://dibujo 1 pintado.png" type="Texture" id=4]
-[ext_resource path="res://Start.png" type="Texture" id=5]
-[ext_resource path="res://Creditos.png" type="Texture" id=6]
+[ext_resource path="res://Resources/Start.png" type="Texture" id=5]
+[ext_resource path="res://Resources/Creditos.png" type="Texture" id=6]
 [ext_resource path="res://Menu.gd" type="Script" id=7]
 
 [node name="Pantalla De Inicio" type="Control"]

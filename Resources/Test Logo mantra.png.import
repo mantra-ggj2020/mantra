@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Suelo 1.png-9baac1f4c3aec201e7f2d5193627f0e9.stex"
+path="res://.import/Test Logo mantra.png-aafc18f8f086305345527d12ea492eb1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Suelo 1.png"
-dest_files=[ "res://.import/Suelo 1.png-9baac1f4c3aec201e7f2d5193627f0e9.stex" ]
+source_file="res://Resources/Test Logo mantra.png"
+dest_files=[ "res://.import/Test Logo mantra.png-aafc18f8f086305345527d12ea492eb1.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Start.png-bfb9d4ea70f8b857bf392b534b8809af.stex"
+path="res://.import/Suelo 3.png-7e2365009aa642ff0c860b0ff70da412.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Start.png"
-dest_files=[ "res://.import/Start.png-bfb9d4ea70f8b857bf392b534b8809af.stex" ]
+source_file="res://Resources/Suelo 3.png"
+dest_files=[ "res://.import/Suelo 3.png-7e2365009aa642ff0c860b0ff70da412.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Suelo 2.png-31b23b45db157cc6fc7a1138375dcf75.stex"
+path="res://.import/Creditos.png-2194b389f2cbe1d4a439a865d0d77bbc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Suelo 2.png"
-dest_files=[ "res://.import/Suelo 2.png-31b23b45db157cc6fc7a1138375dcf75.stex" ]
+source_file="res://Resources/Creditos.png"
+dest_files=[ "res://.import/Creditos.png-2194b389f2cbe1d4a439a865d0d77bbc.stex" ]
 
 [params]
 
