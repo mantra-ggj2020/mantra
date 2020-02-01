@@ -3,7 +3,7 @@
 [ext_resource path="res://Start.gd" type="Script" id=1]
 [ext_resource path="res://Resources/Test Logo mantra.png" type="Texture" id=2]
 [ext_resource path="res://Resources/Config.png" type="Texture" id=3]
-[ext_resource path="res://dibujo 1 pintado.png" type="Texture" id=4]
+[ext_resource path="res://Background.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Resources/Start.png" type="Texture" id=5]
 [ext_resource path="res://Resources/Creditos.png" type="Texture" id=6]
 [ext_resource path="res://Menu.gd" type="Script" id=7]
@@ -20,9 +20,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -320.0
+margin_left = -334.0
 margin_top = -209.0
-margin_right = 320.0
+margin_right = 331.0
 margin_bottom = 112.0
 alignment = 1
 script = ExtResource( 7 )
@@ -31,27 +31,23 @@ __meta__ = {
 }
 
 [node name="Logo" type="TextureRect" parent="Menu"]
-margin_right = 640.0
+margin_left = 12.0
+margin_right = 652.0
 margin_bottom = 321.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="dibujo 1 pintado" type="Sprite" parent="."]
-position = Vector2( 500.881, 448.172 )
-scale = Vector2( 0.158, 0.158 )
-texture = ExtResource( 4 )
-
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-anchor_left = 0.747
-anchor_top = 0.435
-anchor_right = 0.823
-anchor_bottom = 0.5
-margin_left = -326.0
-margin_top = -70.0
-margin_right = 326.0
-margin_bottom = 307.0
+anchor_left = 0.461
+anchor_top = 0.411
+anchor_right = 0.555
+anchor_bottom = 0.443
+margin_left = -120.064
+margin_top = -20.6
+margin_right = 435.68
+margin_bottom = 273.2
 rect_scale = Vector2( 0.52, 0.52 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
@@ -62,8 +58,8 @@ __meta__ = {
 }
 
 [node name="Botones" type="VBoxContainer" parent="HBoxContainer"]
-margin_right = 729.0
-margin_bottom = 416.0
+margin_right = 652.0
+margin_bottom = 313.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
@@ -76,6 +72,17 @@ icon = ExtResource( 5 )
 flat = true
 script = ExtResource( 1 )
 
+[node name="Config" type="Button" parent="HBoxContainer/Botones"]
+visible = false
+margin_top = 127.0
+margin_right = 652.0
+margin_bottom = 250.0
+size_flags_horizontal = 0
+action_mode = 0
+icon = ExtResource( 3 )
+flat = true
+script = ExtResource( 1 )
+
 [node name="Creditos" type="Button" parent="HBoxContainer/Botones"]
 margin_top = 127.0
 margin_right = 652.0
@@ -85,14 +92,13 @@ action_mode = 0
 icon = ExtResource( 6 )
 flat = true
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Config" type="Button" parent="HBoxContainer/Botones"]
-margin_top = 254.0
-margin_right = 652.0
-margin_bottom = 377.0
-size_flags_horizontal = 0
-action_mode = 0
-icon = ExtResource( 3 )
-flat = true
-script = ExtResource( 1 )
+[node name="Control" parent="." instance=ExtResource( 4 )]
+margin_left = 3.61282
+margin_top = -0.844986
+margin_right = 3.61279
+margin_bottom = -0.844971
 [connection signal="pressed" from="HBoxContainer/Botones/Start" to="Menu" method="_on_Start_pressed"]
