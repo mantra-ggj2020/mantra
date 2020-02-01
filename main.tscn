@@ -74,7 +74,7 @@ position = Vector2( 260.168, -82.7581 )
 scale = Vector2( 1.60244, 0.861128 )
 frames = SubResource( 2 )
 animation = "Grassy"
-frame = 2
+frame = 1
 playing = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -86,6 +86,9 @@ margin_left = 2.72217
 margin_top = -5.00218
 margin_right = 2.72217
 margin_bottom = -5.00218
+
+[node name="AnimatedSprite" parent="Control" index="1"]
+frame = 1
 
 [node name="dibujo 1 pintado" parent="Control" index="8"]
 visible = false
