@@ -1,0 +1,42 @@
+{
+	"1": [
+		{"texto":"Om", "concentracion":5, "tiempoExp":7},
+		{"texto":"Om mani", "concentracion":5, "tiempoExp":7},
+		{"texto":"Shanti", "concentracion":5, "tiempoExp":7}
+	],
+	"2": [
+		{"texto":"Har Har Har", "concentracion":5, "tiempoExp":7},
+		{"texto":"Sat Gure Name", "concentracion":5, "tiempoExp":7},
+		{"texto":"Ad Gure Name", "concentracion":5, "tiempoExp":7}
+	],
+	"3": [
+		{"texto":"Llugad Gure Name", "concentracion":5, "tiempoExp":7},
+		{"texto":"Namo Amitoufo", "concentracion":5, "tiempoExp":7},
+		{"texto":"Namo Amitabha Buda", "concentracion":5, "tiempoExp":7}
+	],
+	"4": [
+		{"texto":"Om Hanumate Nama", "concentracion":5, "tiempoExp":7},
+		{"texto":"Siri Guru Ve Name", "concentracion":5, "tiempoExp":7},
+		{"texto":"Om Namah Shivaya", "concentracion":5, "tiempoExp":7}
+	],
+	"5": [
+		{"texto":"Om mani padme hum om", "concentracion":5, "tiempoExp":7},
+		{"texto":"Ong Namo Guru Dev Namo ", "concentracion":5, "tiempoExp":7},
+		{"texto":"Om gam ganapataye namaha", "concentracion":5, "tiempoExp":7}
+	],
+	"6": [
+		{"texto":"Sat Patim Dehi Parameshwara", "concentracion":5, "tiempoExp":7},
+		{"texto":"Om Gum Ganapatayei Namaha", "concentracion":5, "tiempoExp":7},
+		{"texto":"Ap Sahae Hoa Sache Da Sacha Doa", "concentracion":5, "tiempoExp":7}
+	],
+	"7": [
+		{"texto":"Lokah Samastah Sukhino Bhavantu", "concentracion":5, "tiempoExp":7},
+		{"texto":"Om Muni Muni Mahamuni Sakyamuni Svaha", "concentracion":5, "tiempoExp":7},
+		{"texto":"Om Sri Ganeshaya Namaha Om Ganesha Om", "concentracion":5, "tiempoExp":7}
+	],
+	"8": [
+		{"texto":"Namo Tassa Bhagavato Arahato Samma Sambuddhassa", "concentracion":5, "tiempoExp":7},
+		{"texto":"Gate Gate Paragate Parasamgate Bodhi Soha Prajna Paramita", "concentracion":5, "tiempoExp":7},
+		{"texto":"Sambuddhassa Lokah Samastah Ganapatayei Mahamuni Shanti", "concentracion":5, "tiempoExp":7}
+	]
+}

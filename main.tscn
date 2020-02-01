@@ -48,5 +48,9 @@ polygon = PoolVector2Array( -205.915, 77.119, 769.476, 72.8185, 770.673, 106.947
 
 [node name="Polygon2D" type="Polygon2D" parent="Area2D"]
 polygon = PoolVector2Array( -208.193, 77.6247, 771.02, 70.4048, 770.117, 108.31, -207.29, 111.017 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 [connection signal="pressed" from="AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
 [connection signal="pressed" from="DescendButton" to="Meditador" method="_on_DescendButton_pressed"]
