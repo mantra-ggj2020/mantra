@@ -20,3 +20,8 @@ func _ready():
 func _on_Start_pressed():
 	get_tree().change_scene("res://main.tscn")
 	pass # Replace with function body.
+
+
+func _on_Creditos_pressed():
+	get_tree().change_scene("res:/Creditos.tscn")
+	pass # Replace with function body.
