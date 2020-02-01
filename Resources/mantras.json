@@ -1,13 +1,13 @@
 {
 	"1": [
-		{"texto":"Om", "concentracion":2, "tiempoExp":1},
-		{"texto":"Om mani", "concentracion":2, "tiempoExp":1},
-		{"texto":"Shanti", "concentracion":2, "tiempoExp":1}
+		{"texto":"Om", "concentracion":2, "tiempoExp":5},
+		{"texto":"Om mani", "concentracion":2, "tiempoExp":5},
+		{"texto":"Shanti", "concentracion":2, "tiempoExp":5}
 	],
 	"2": [
-		{"texto":"Har Har Har", "concentracion":3, "tiempoExp":1},
-		{"texto":"Sat Gure Name", "concentracion":3, "tiempoExp":2},
-		{"texto":"Ad Gure Name", "concentracion":3, "tiempoExp":2}
+		{"texto":"Har Har Har", "concentracion":3, "tiempoExp":4},
+		{"texto":"Sat Gure Name", "concentracion":3, "tiempoExp":3},
+		{"texto":"Ad Gure Name", "concentracion":3, "tiempoExp":4}
 	],
 	"3": [
 		{"texto":"Llugad Gure Name", "concentracion":4, "tiempoExp":2},
