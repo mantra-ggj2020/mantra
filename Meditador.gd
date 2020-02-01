@@ -57,3 +57,6 @@ func _on_Culo_area_entered(_area):
 	sprite.set_texture(sad_monk)
 	tween.stop_all()
 	pass # Replace with function body.
+	
+func _fall():
+	pass

@@ -16,9 +16,15 @@ func _unfocused():
 	
 func _si(concentracion):
 	get_node("Meditador")._ascend(concentracion*multiplicador)
+	get_node("Progreso")._focus(concentracion)
 	
 func _no(concentracion):
 	get_node("Meditador")._descend(concentracion*multiplicador)
+	get_node("Progreso")._focus(-concentracion)
+
+
+###PUNTOS
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
