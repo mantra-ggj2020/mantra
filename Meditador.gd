@@ -1,5 +1,6 @@
 extends Node2D
 var sad_monk = preload("res://Resources/monk_sad.png")
+var zen_monk = preload("res://Resources/monk_zen.png")
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -59,4 +60,12 @@ func _on_Culo_area_entered(_area):
 	pass # Replace with function body.
 	
 func _fall():
+	_descend(1000)
 	pass
+	
+func _evolve(level):
+	if level>=4:
+		$Sprite.set_texture(zen_monk)
+		if level >= 7:
+			$Sprite.set_rotation(6)
+	

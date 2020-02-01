@@ -29,10 +29,15 @@ func _checkLink():
 		level += 1
 		get_parent().get_node("Generamantra").nivel = level
 		print("levelup! now level:" + str(level) )
+		if level >= 4:
+			get_parent().get_node("Meditador")._evolve(level)
+			
 	pass	
 
 func _drop():
 	 get_parent().get_node("Meditador")._fall()
+	
+	
 
 
 
