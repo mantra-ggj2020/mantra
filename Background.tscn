@@ -1,0 +1,105 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Resources/Suelo 3.png" type="Texture" id=1]
+[ext_resource path="res://Resources/Suelo 1.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Suelo 2.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Clouds/Nube 2.png" type="Texture" id=4]
+[ext_resource path="res://Resources/Clouds/Nube 1.png" type="Texture" id=5]
+[ext_resource path="res://Resources/Clouds/Nube 3.png" type="Texture" id=6]
+[ext_resource path="res://Resources/Clouds/Nube 4.png" type="Texture" id=7]
+[ext_resource path="res://Resources/Clouds/Nube 5.png" type="Texture" id=8]
+[ext_resource path="res://Resources/Clouds/Nube 6.png" type="Texture" id=9]
+[ext_resource path="res://dibujo 1 pintado.png" type="Texture" id=10]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0.0748299, 0.414966 )
+colors = PoolColorArray( 0.0927124, 0.655225, 0.765625, 1, 0.98056, 0.99028, 0.992188, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ShaderMaterial" id=3]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "Grassy",
+"speed": 7.0
+} ]
+
+[node name="Control" type="Control"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2( -1.43295, 598.387 )
+rotation = -1.5708
+scale = Vector2( 2.18172, 1.71848 )
+z_as_relative = false
+color = Color( 0.121569, 0.568627, 0.654902, 1 )
+texture = SubResource( 2 )
+texture_scale = Vector2( 1.707, 1 )
+invert_border = 0.1
+polygon = PoolVector2Array( 0.484421, 0.429604, 1022.46, 0.429604, 1023.97, 598.844, 1.99176, 597.336 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 223.898, 479.376 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+material = SubResource( 3 )
+position = Vector2( 0, -73.334 )
+scale = Vector2( 1, 1.61759 )
+polygon = PoolVector2Array( -205.915, 77.119, 769.476, 72.8185, 770.673, 106.947, 11.1232, 105.489, -172.162, 107.718, -207.189, 108.144 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
+position = Vector2( 287.1, -82.7581 )
+scale = Vector2( 1.60022, 0.861128 )
+frames = SubResource( 4 )
+animation = "Grassy"
+frame = 1
+playing = true
+
+[node name="Nube 1" type="Sprite" parent="."]
+position = Vector2( 877.237, 12.8781 )
+scale = Vector2( 2.7425, 3.79615 )
+texture = ExtResource( 5 )
+
+[node name="Nube 2" type="Sprite" parent="."]
+position = Vector2( 222.638, 114.744 )
+scale = Vector2( 2.213, 2.32471 )
+texture = ExtResource( 4 )
+
+[node name="Nube 3" type="Sprite" parent="."]
+position = Vector2( 659.038, 234.279 )
+scale = Vector2( 2.213, 2.32471 )
+texture = ExtResource( 6 )
+
+[node name="Nube 4" type="Sprite" parent="."]
+position = Vector2( 266.846, -518.176 )
+scale = Vector2( 2.213, 2.32471 )
+texture = ExtResource( 7 )
+
+[node name="Nube 5" type="Sprite" parent="."]
+position = Vector2( 354.558, -870.709 )
+scale = Vector2( 2.89225, 3.85302 )
+texture = ExtResource( 8 )
+
+[node name="Nube 6" type="Sprite" parent="."]
+position = Vector2( 824.175, -468.534 )
+scale = Vector2( 2.213, 2.32471 )
+texture = ExtResource( 9 )
+
+[node name="dibujo 1 pintado" type="Sprite" parent="."]
+position = Vector2( 529.984, 464.295 )
+scale = Vector2( 0.212031, 0.233658 )
+texture = ExtResource( 10 )
