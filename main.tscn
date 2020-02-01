@@ -67,11 +67,7 @@ position = Vector2( 260.168, -82.7581 )
 scale = Vector2( 1.60244, 0.861128 )
 frames = SubResource( 2 )
 animation = "Grassy"
-<<<<<<< HEAD
-frame = 2
-=======
 frame = 1
->>>>>>> 42cf71e238f3238f15fb2c95d0bf2c40cdae21f2
 playing = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]

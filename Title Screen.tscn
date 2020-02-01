@@ -103,10 +103,4 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Control" parent="." instance=ExtResource( 4 )]
-margin_left = 3.16544
-margin_top = -2.3625
-margin_right = 3.16541
-margin_bottom = -2.36249
 [connection signal="pressed" from="HBoxContainer/Botones/Start" to="Menu" method="_on_Start_pressed"]
