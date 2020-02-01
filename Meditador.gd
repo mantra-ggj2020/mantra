@@ -1,5 +1,5 @@
 extends Node2D
-var sad_monk = preload("res://Resources/dibujo 1 pintado.png")
+var sad_monk = preload("res://Resources/monk_sad.png")
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -11,11 +11,11 @@ onready var sprite = get_node("Sprite")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	_move(100)
+	#_move(100)
 	#var tween = get_node("Tween")
 	pass # Replace with function body.
 	
-func _process(delta):
+func _process(_delta):
 	pass
 	
 
@@ -52,7 +52,7 @@ func _on_DescendButton_pressed():
 	pass # Replace with function body.
 
 
-func _on_Culo_area_entered(area):
+func _on_Culo_area_entered(_area):
 	print("ping")
 	sprite.set_texture(sad_monk)
 	pass # Replace with function body.

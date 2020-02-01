@@ -58,10 +58,11 @@ material = SubResource( 1 )
 polygon = PoolVector2Array( -205.915, 77.119, 769.476, 72.8185, 770.673, 106.947, 11.1232, 105.489, -172.162, 107.718, -207.189, 108.144 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
-position = Vector2( 272.068, -116.087 )
+position = Vector2( 272.068, -82.7581 )
+scale = Vector2( 1, 0.861128 )
 frames = SubResource( 2 )
 animation = "Grassy"
-frame = 1
+frame = 2
 playing = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]

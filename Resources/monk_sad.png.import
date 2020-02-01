@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dibujo 1 pintado.png-60d2d152b972d3a3677d266ee269470b.stex"
+path="res://.import/monk_sad.png-79a02b26b74aa6448eef9443b5ea7df6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/dibujo 1 pintado.png"
-dest_files=[ "res://.import/dibujo 1 pintado.png-60d2d152b972d3a3677d266ee269470b.stex" ]
+source_file="res://Resources/monk_sad.png"
+dest_files=[ "res://.import/monk_sad.png-79a02b26b74aa6448eef9443b5ea7df6.stex" ]
 
 [params]
 

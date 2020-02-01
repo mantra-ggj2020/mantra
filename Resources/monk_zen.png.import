@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dibujo 5.png-50564a122bf6b43c5a862598c8032ead.stex"
+path="res://.import/monk_zen.png-c8c66e385ea818550285ba4c465df224.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/dibujo 5.png"
-dest_files=[ "res://.import/dibujo 5.png-50564a122bf6b43c5a862598c8032ead.stex" ]
+source_file="res://Resources/monk_zen.png"
+dest_files=[ "res://.import/monk_zen.png-c8c66e385ea818550285ba4c465df224.stex" ]
 
 [params]
 
