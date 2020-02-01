@@ -1,4 +1,4 @@
-extends Node2D
+extends CanvasLayer
 
 var Mantra = preload("res://Mantra.tscn")
 var mantras = {}
@@ -7,7 +7,7 @@ var mantraActual
 var nivel = 1 #Nivel actual. Hay que ver si se toma de otro lado. Para probar está puesto siempre el 1
 var file = File.new()
 onready var timer = get_node("Timer")
-onready var screen_size = get_viewport_rect().size
+onready var screen_size = get_viewport().size
 
 
 func _ready():

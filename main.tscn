@@ -24,10 +24,7 @@ script = ExtResource( 2 )
 
 [node name="Generamantra" parent="." instance=ExtResource( 3 )]
 
-[node name="Meditador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 542.418, 453.524 )
-
-[node name="AscendButton" type="Button" parent="."]
+[node name="AscendButton" type="Button" parent="Generamantra"]
 margin_left = 714.453
 margin_top = 239.59
 margin_right = 773.453
@@ -38,7 +35,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DescendButton" type="Button" parent="."]
+[node name="DescendButton" type="Button" parent="Generamantra"]
 margin_left = 714.453
 margin_top = 347.514
 margin_right = 782.453
@@ -48,6 +45,15 @@ text = "Descend"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Meditador" parent="." instance=ExtResource( 1 )]
+position = Vector2( 542.418, 453.524 )
+
+[node name="Camera2D" type="Camera2D" parent="Meditador"]
+current = true
+limit_left = -3
+limit_right = 1024
+limit_bottom = 600
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 253.11, 472.67 )
@@ -88,7 +94,7 @@ visible = false
 
 [node name="Progreso" type="Node" parent="."]
 script = ExtResource( 8 )
-[connection signal="pressed" from="AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
-[connection signal="pressed" from="DescendButton" to="Meditador" method="_on_DescendButton_pressed"]
+[connection signal="pressed" from="Generamantra/AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
+[connection signal="pressed" from="Generamantra/DescendButton" to="Meditador" method="_on_DescendButton_pressed"]
 
 [editable path="Control"]
