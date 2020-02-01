@@ -9,8 +9,7 @@ onready var tween = get_node("Tween")
 
 func _ready():
 	set_process_input(true)
-	get_node("Texto").push_align(RichTextLabel.ALIGN_CENTER)
-	get_node("Texto").text = ' '+texto
+	get_node("Texto").text = texto
 	get_node("Timer").set_wait_time(tiempoExp)
 	get_node("Timer").start()
 	tween.interpolate_property(self, "position",
