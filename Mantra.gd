@@ -5,12 +5,19 @@ var concentracion
 var tiempoExp
 
 var inputstr = ''
+onready var tween = get_node("Tween")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	set_process_input(true)
-	get_node("Texto").text = texto
+	get_node("Texto").push_align(RichTextLabel.ALIGN_CENTER)
+	get_node("Texto").text = ' '+texto
 	get_node("Timer").set_wait_time(tiempoExp)
 	get_node("Timer").start()
+	tween.interpolate_property(self, "position",
+		self.position , Vector2(self.position.x, self.position.y - 100), tiempoExp,
+		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	tween.start()
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
