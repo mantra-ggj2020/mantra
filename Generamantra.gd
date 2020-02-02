@@ -26,7 +26,7 @@ func generar(mantra):
 	mantraActual.texto = mantra.texto
 	mantraActual.concentracion = mantra.concentracion
 	mantraActual.tiempoExp = mantra.tiempoExp
-	mantraActual.position = Vector2(rand_range(screen_size.x/2,screen_size.x/2), rand_range(screen_size.y/2,screen_size.y/2))
+	mantraActual.position = Vector2(rand_range(screen_size.x/2-200,screen_size.x/2+200), rand_range(screen_size.y/2+200,screen_size.y/2+200))
 #	get_tree().get_root().call_deferred("add_child", mantraActual)
 	call_deferred("add_child", mantraActual)
 	crearTimer(mantra.tiempoExp)

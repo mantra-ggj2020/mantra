@@ -13,7 +13,7 @@ func _ready():
 	set_process_input(true)
 	get_node("Texto").text = texto
 	get_node("Texto4").bbcode_text = ' '+texto
-	get_node("Texto4").push_align(RichTextLabel.ALIGN_CENTER) 
+	_center()
 	get_node("Timer").set_wait_time(tiempoExp)
 	get_node("Timer").start()
 	tween.interpolate_property(self, "position",
@@ -34,11 +34,13 @@ func _input(event):
 #			completa()
 		if texto[idxLetra].to_upper() == s.to_upper():
 			get_node("Texto4").bbcode_text = ' [color=#00EE00][tornado radius=5 freq=5]'+texto.substr(0,idxLetra+1)+'[/tornado][/color]'+texto.substr(idxLetra+1)
+			_center()
 			idxLetra = idxLetra + 1
 			if idxLetra == texto.length():
 				completa()
 		elif (s.to_upper() >= 'A' and s.to_upper() <= 'Z') or s == ' ':
 			get_node("Texto4").bbcode_text = ' [color=red]'+texto.substr(0,idxLetra)+'[/color]'+texto.substr(idxLetra)
+			_center()
 
 func _on_Timer_timeout():
 	falla()
@@ -56,3 +58,5 @@ func falla():
 #	print("Falló")
 	get_tree().get_root().get_node("Main")._no(concentracion)
 	
+func _center():
+	get_node("Texto4").bbcode_text = '[center]' + get_node("Texto4").bbcode_text + '[/center]'

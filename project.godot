@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Mantra"
-run/main_scene="res://main.tscn"
+run/main_scene="res://Title Screen.tscn"
 config/icon="res://Resources/icon.png"
 
 [rendering]

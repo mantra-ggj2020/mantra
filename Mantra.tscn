@@ -16,10 +16,10 @@ script = ExtResource( 1 )
 autostart = true
 
 [node name="Texto4" type="RichTextLabel" parent="."]
-margin_left = 233.984
-margin_top = 72.0998
-margin_right = 751.984
-margin_bottom = 249.1
+margin_left = -240.786
+margin_top = -73.4602
+margin_right = 277.214
+margin_bottom = 103.54
 mouse_filter = 2
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 0.984314, 0, 1 )
