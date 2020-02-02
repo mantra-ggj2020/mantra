@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Mantra.gd" type="Script" id=1]
 [ext_resource path="res://Resources/Khaleefa.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Resources/bell lvl down.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Resources/bell lvl up.ogg" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 42
@@ -40,4 +42,10 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="LevelUp" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="LevelDown" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

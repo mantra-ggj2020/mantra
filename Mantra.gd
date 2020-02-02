@@ -31,16 +31,17 @@ func _input(event):
 
 func _on_Timer_timeout():
 	falla()
-
+	
 func completa():
 	emit_signal("completado")
 	inputstr = ''
 	self.queue_free()
 	print("Completa Mantra")
 	get_tree().get_root().get_node("Main")._si(concentracion)
+	$LevelUp.play()
 	
-
 func falla():
 	self.queue_free()
 	print("Falló")
 	get_tree().get_root().get_node("Main")._no(concentracion)
+	$LevelDown.play()
