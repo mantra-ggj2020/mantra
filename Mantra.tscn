@@ -5,8 +5,6 @@
 
 [sub_resource type="DynamicFont" id=1]
 size = 42
-outline_size = 1
-outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
 [node name="Mantra" type="Node2D"]
@@ -34,6 +32,9 @@ margin_right = 401.0
 margin_bottom = 48.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.984314, 0.968627, 0.0117647, 1 )
+custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
 align = 1
 valign = 1
 autowrap = true

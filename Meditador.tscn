@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Meditador.gd" type="Script" id=1]
 [ext_resource path="res://Resources/monk_focused.png" type="Texture" id=2]
+[ext_resource path="res://Particles/magic_03.png" type="Texture" id=3]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0, 0.0124999 ), 0.0, 0.0, 0, 0, Vector2( 0.32, 0.7375 ), 1.76136, 1.76136, 0, 0, Vector2( 0.662857, 0.755682 ), -1.7759, -1.7759, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
 
 [node name="Meditador" type="Node2D"]
 position = Vector2( 3.71907, 8.34477 )
@@ -9,6 +13,20 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
+
+[node name="Particulas" type="CPUParticles2D" parent="."]
+position = Vector2( -4, -8 )
+amount = 25
+speed_scale = 0.2
+texture = ExtResource( 3 )
+direction = Vector2( 0, 0 )
+spread = 0.0
+gravity = Vector2( 0, 0 )
+scale_amount = 0.5
+scale_amount_random = 1.0
+scale_amount_curve = SubResource( 1 )
+color = Color( 1, 0, 0, 1 )
+hue_variation_random = 1.0
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -2.71107, 2.84515 )
@@ -23,5 +41,6 @@ __meta__ = {
 [node name="Culo" type="Area2D" parent="."]
 
 [node name="Collider" type="CollisionPolygon2D" parent="Culo"]
+visible = false
 polygon = PoolVector2Array( -5.68594, -6.52788, -42.6735, 9.46048, -48.5272, 30.7846, -40.5829, 51.2725, -28.4574, 62.9799, 15.4452, 63.398, 57.2572, 51.6906, 36.3512, -0.992528 )
 [connection signal="area_entered" from="Culo" to="." method="_on_Culo_area_entered"]

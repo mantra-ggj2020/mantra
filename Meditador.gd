@@ -12,6 +12,7 @@ onready var sprite = get_node("Sprite")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Particulas.color_ramp = load("res://color_lvl1.tres")
 	#_move(100)
 	#var tween = get_node("Tween")
 	pass # Replace with function body.
@@ -64,6 +65,17 @@ func _fall():
 	pass
 	
 func _evolve(level):
+	$Particulas.color_ramp = load("res://color_lvl"+str(level)+".tres")
+	print(Vector3(0.05*(level-1)+0.2, 50*(level-1), (1/6)*(level-1)))
+	$Particulas.speed_scale = 0.05*(level-1)+0.2
+	$Particulas.angular_velocity = 50*(level-1)
+	$Particulas.hue_variation = (1.0/6.0)*(level-1)
+#	if level == 1:
+#		$Particulas.initial_velocity = 100
+#		$Particulas.orbit_velocity = 0
+#	if level == 2:
+#		$Particulas.initial_velocity = 120
+#		$Particulas.orbit_velocity = 0.15
 	if level>=4:
 		$Sprite.set_texture(zen_monk)
 		if level >= 7:
