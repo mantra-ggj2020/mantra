@@ -29,3 +29,9 @@ func _ready():
 func _on_Retry_pressed():
 	get_tree().change_scene("res://Title Screen.tscn")
 	pass # Replace with function body.
+
+
+func _on_Button_pressed():
+	EndingSong.play()
+	get_tree().change_scene("res://Creditos.tscn")
+	pass # Replace with function body.

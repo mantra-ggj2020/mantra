@@ -11,5 +11,5 @@ dest_files=[ "res://.import/Mantra full on.ogg-070e842c1d7ad4b3757c49e513d92f3a.
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
