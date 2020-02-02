@@ -10,9 +10,9 @@
 [ext_resource path="res://Progreso.gd" type="Script" id=8]
 [ext_resource path="res://Resources/01-Mantra reemplazo corto-consolidated.ogg" type="AudioStream" id=9]
 [ext_resource path="res://Resources/Gong comienzo.ogg" type="AudioStream" id=10]
-[ext_resource path="res://Resources/bell lvl down.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Resources/end glitch.ogg" type="AudioStream" id=11]
 [ext_resource path="res://Resources/bell lvl up.ogg" type="AudioStream" id=12]
-[ext_resource path="res://Resources/end glitch 2.ogg" type="AudioStream" id=13]
+[ext_resource path="res://Resources/end dial-up largo.ogg" type="AudioStream" id=13]
 [ext_resource path="res://Resources/Mantra full on.ogg" type="AudioStream" id=14]
 
 [sub_resource type="ShaderMaterial" id=1]
