@@ -31,6 +31,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Meditador" parent="." instance=ExtResource( 1 )]
+position = Vector2( 542.418, 453.524 )
+
+[node name="Camera2D" type="Camera2D" parent="Meditador"]
+current = true
+limit_left = -3
+limit_right = 1024
+limit_bottom = 600
+
 [node name="Generamantra" parent="." instance=ExtResource( 3 )]
 layer = 2
 
@@ -58,15 +67,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Meditador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 542.418, 453.524 )
-
-[node name="Camera2D" type="Camera2D" parent="Meditador"]
-current = true
-limit_left = -3
-limit_right = 1024
-limit_bottom = 600
-
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 253.11, 472.67 )
 input_pickable = false
@@ -85,13 +85,10 @@ position = Vector2( 260.168, -82.7581 )
 scale = Vector2( 1.60244, 0.861128 )
 frames = SubResource( 2 )
 animation = "Grassy"
-frame = 2
+frame = 1
 playing = true
 
 [node name="Control" parent="." instance=ExtResource( 7 )]
-
-[node name="AnimatedSprite" parent="Control" index="3"]
-frame = 1
 
 [node name="dibujo 1 pintado" parent="Control" index="4"]
 visible = false
@@ -111,8 +108,9 @@ stream = ExtResource( 12 )
 
 [node name="Leveldown" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
+[connection signal="fallen" from="Meditador" to="Progreso" method="_on_Meditador_fallen"]
+[connection signal="win" from="Meditador" to="Progreso" method="_on_Meditador_win"]
 [connection signal="pressed" from="Generamantra/AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
 [connection signal="pressed" from="Generamantra/DescendButton" to="Meditador" method="_on_DescendButton_pressed"]
-[connection signal="fallen" from="Meditador" to="Progreso" method="_on_Meditador_fallen"]
 
 [editable path="Control"]

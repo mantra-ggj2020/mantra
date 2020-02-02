@@ -11,6 +11,7 @@ onready var sprite = get_node("Sprite")
 #onready var meditador = get_parent();
 
 signal fallen
+signal win
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -83,4 +84,6 @@ func _evolve(level):
 		$Sprite.set_texture(zen_monk)
 		if level >= 7:
 			$Sprite.set_rotation(6)
+	if level == 8:
+		emit_signal("win")
 	

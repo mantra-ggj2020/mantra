@@ -9,7 +9,7 @@
 [ext_resource path="res://Menu.gd" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=1]
-size = 50
+size = 58
 outline_size = 2
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 6 )
@@ -40,7 +40,6 @@ margin_right = 1024.0
 margin_bottom = 600.0
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 1, 0.984314, 0, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
 bbcode_text = "[center][tornado radius=5 freq=5]Type START[/tornado][/center]"
 text = "Type START"
