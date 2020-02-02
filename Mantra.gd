@@ -9,6 +9,7 @@ onready var tween = get_node("Tween")
 signal completado()
 
 func _ready():
+# warning-ignore:return_value_discarded
 	connect('completado', get_parent(), '_on_Mantra_completado')
 	set_process_input(true)
 	get_node("Texto").text = texto
