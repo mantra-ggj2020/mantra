@@ -38,10 +38,10 @@ func completa():
 	self.queue_free()
 	print("Completa Mantra")
 	get_tree().get_root().get_node("Main")._si(concentracion)
-	$LevelUp.play()
+	
 	
 func falla():
 	self.queue_free()
 	print("Falló")
 	get_tree().get_root().get_node("Main")._no(concentracion)
-	$LevelDown.play()
+	

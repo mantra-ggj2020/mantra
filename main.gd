@@ -18,10 +18,12 @@ func _unfocused():
 func _si(concentracion):
 	get_node("Meditador")._ascend(concentracion*multiplicador)
 	get_node("Progreso")._focus(concentracion)
+	$Levelup.play()
 	
 func _no(concentracion):
 	get_node("Meditador")._descend(concentracion*multiplicador)
 	get_node("Progreso")._focus(-concentracion)
+	$Leveldown.play()
 
 
 ###PUNTOS
