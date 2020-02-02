@@ -10,6 +10,8 @@ onready var tween = get_node("Tween")
 onready var sprite = get_node("Sprite")
 #onready var meditador = get_parent();
 
+signal fallen
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#_move(100)
@@ -57,6 +59,7 @@ func _on_Culo_area_entered(_area):
 	print("ping")
 	sprite.set_texture(sad_monk)
 	tween.stop_all()
+	emit_signal("fallen")
 	pass # Replace with function body.
 	
 func _fall():

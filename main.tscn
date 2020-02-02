@@ -112,5 +112,6 @@ stream = ExtResource( 12 )
 stream = ExtResource( 11 )
 [connection signal="pressed" from="Generamantra/AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
 [connection signal="pressed" from="Generamantra/DescendButton" to="Meditador" method="_on_DescendButton_pressed"]
+[connection signal="fallen" from="Meditador" to="Progreso" method="_on_Meditador_fallen"]
 
 [editable path="Control"]
