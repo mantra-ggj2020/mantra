@@ -87,10 +87,12 @@ position = Vector2( 260.168, -82.7581 )
 scale = Vector2( 1.60244, 0.861128 )
 frames = SubResource( 2 )
 animation = "Grassy"
-frame = 1
 playing = true
 
 [node name="Control" parent="." instance=ExtResource( 7 )]
+
+[node name="AnimatedSprite" parent="Control" index="3"]
+frame = 2
 
 [node name="dibujo 1 pintado" parent="Control" index="4"]
 visible = false
@@ -117,6 +119,7 @@ stream = ExtResource( 13 )
 
 [node name="Credito" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 14 )
+volume_db = 1.0
 [connection signal="fallen" from="Meditador" to="Progreso" method="_on_Meditador_fallen"]
 [connection signal="win" from="Meditador" to="Progreso" method="_on_Meditador_win"]
 [connection signal="pressed" from="Generamantra/AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
