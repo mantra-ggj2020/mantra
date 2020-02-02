@@ -8,8 +8,9 @@ var quotes = ["No sos tus pensamientos sino aquello que los percibe",
 "Cae 7 veces, levantante 8",
 "Todo tiene su belleza, solo que no todos lo ven",
 "Haz siempre lo que te da miedo primero",
-"Actúa como si el fracazo fuese imposible",
-"Si te gusta el durazno bancate la pelusa",]
+"Actua como si el fracaso fuese imposible",
+"Si te gusta el durazno bancate la pelusa",
+"La humanidad tiene emociones paleoliticas, instituciones medievales, y tecnologia divina"]
 
 
 # Called when the node enters the scene tree for the first time.
