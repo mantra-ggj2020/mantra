@@ -87,12 +87,13 @@ position = Vector2( 260.168, -82.7581 )
 scale = Vector2( 1.60244, 0.861128 )
 frames = SubResource( 2 )
 animation = "Grassy"
+frame = 2
 playing = true
 
 [node name="Control" parent="." instance=ExtResource( 7 )]
 
 [node name="AnimatedSprite" parent="Control" index="3"]
-frame = 2
+frame = 1
 
 [node name="dibujo 1 pintado" parent="Control" index="4"]
 visible = false
