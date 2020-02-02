@@ -15,7 +15,7 @@ __meta__ = {
 }
 
 [node name="Particulas" type="CPUParticles2D" parent="."]
-position = Vector2( -4, -8 )
+position = Vector2( -4, 6 )
 amount = 25
 speed_scale = 0.2
 texture = ExtResource( 3 )
@@ -23,7 +23,7 @@ direction = Vector2( 0, 0 )
 spread = 0.0
 gravity = Vector2( 0, 0 )
 scale_amount = 0.5
-scale_amount_random = 1.0
+scale_amount_random = 0.4
 scale_amount_curve = SubResource( 1 )
 color = Color( 1, 0, 0, 1 )
 hue_variation_random = 1.0

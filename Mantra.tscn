@@ -4,7 +4,9 @@
 [ext_resource path="res://Resources/Khaleefa.otf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
-size = 42
+size = 50
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
 [node name="Mantra" type="Node2D"]
@@ -14,13 +16,16 @@ script = ExtResource( 1 )
 autostart = true
 
 [node name="Texto4" type="RichTextLabel" parent="."]
-visible = false
-margin_right = 518.0
-margin_bottom = 177.0
+margin_left = 233.984
+margin_top = 72.0998
+margin_right = 751.984
+margin_bottom = 249.1
 mouse_filter = 2
 custom_fonts/normal_font = SubResource( 1 )
-custom_colors/default_color = Color( 0.984314, 0.968627, 0.0117647, 1 )
+custom_colors/default_color = Color( 1, 0.984314, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
+text = "om mani sararsasasasa robertocarlos"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -28,15 +33,32 @@ __meta__ = {
 [node name="Tween" type="Tween" parent="."]
 
 [node name="Texto" type="Label" parent="."]
-margin_right = 401.0
-margin_bottom = 48.0
+visible = false
+margin_left = 1.36035
+margin_top = 65.2979
+margin_right = 402.36
+margin_bottom = 116.298
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.984314, 0.968627, 0.0117647, 1 )
 custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
-align = 1
-valign = 1
+align = 3
+valign = 3
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextoTipeado" type="Label" parent="."]
+margin_right = 401.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+align = 2
+valign = 3
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false

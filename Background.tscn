@@ -118,7 +118,6 @@ position = Vector2( 510.998, 396.618 )
 scale = Vector2( 1.60022, 0.861128 )
 frames = SubResource( 3 )
 animation = "Grassy"
-frame = 2
 playing = true
 
 [node name="dibujo 1 pintado" type="Sprite" parent="."]
