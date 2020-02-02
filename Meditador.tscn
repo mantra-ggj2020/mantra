@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Meditador.gd" type="Script" id=1]
 [ext_resource path="res://Resources/monk_focused.png" type="Texture" id=2]
@@ -6,6 +6,21 @@
 
 [sub_resource type="Curve" id=1]
 _data = [ Vector2( 0, 0.0124999 ), 0.0, 0.0, 0, 0, Vector2( 0.32, 0.7375 ), 1.76136, 1.76136, 0, 0, Vector2( 0.662857, 0.755682 ), -1.7759, -1.7759, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Animation" id=2]
+resource_name = "subebaja"
+length = 3.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("Sprite:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.249987, -1.9225, 0.25, 1.9226, 6, -0.25, 0, 0.25, 0, -6, -0.25, 0, 0.25, 0, 0, -0.249989, -1.72224, 0.24, 1.65342 ),
+"times": PoolRealArray( 0.1, 1, 2, 3 )
+}
 
 [node name="Meditador" type="Node2D"]
 position = Vector2( 3.71907, 8.34477 )
@@ -29,7 +44,7 @@ color = Color( 1, 0, 0, 1 )
 hue_variation_random = 1.0
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -2.71107, 2.84515 )
+position = Vector2( -2.71107, 0.834582 )
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 __meta__ = {
@@ -43,4 +58,8 @@ __meta__ = {
 [node name="Collider" type="CollisionPolygon2D" parent="Culo"]
 visible = false
 polygon = PoolVector2Array( -5.68594, -6.52788, -42.6735, 9.46048, -48.5272, 30.7846, -40.5829, 51.2725, -28.4574, 62.9799, 15.4452, 63.398, 57.2572, 51.6906, 36.3512, -0.992528 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "subebaja"
+anims/subebaja = SubResource( 2 )
 [connection signal="area_entered" from="Culo" to="." method="_on_Culo_area_entered"]

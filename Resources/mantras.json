@@ -20,8 +20,9 @@
 		{"texto":"om namah shivaya", "concentracion":5, "tiempoExp":5}
 	],
 	"5": [
+		{"texto":"aeea yo soy sabalero", "concentracion":6, "tiempoExp":5},
 		{"texto":"om mani padme hum om", "concentracion":6, "tiempoExp":5},
-		{"texto":"ong namo guru dev namo ", "concentracion":6, "tiempoExp":6},
+		{"texto":"ong namo guru dev namo", "concentracion":6, "tiempoExp":6},
 		{"texto":"om gam ganapataye namaha", "concentracion":6, "tiempoExp":6}
 	],
 	"6": [
