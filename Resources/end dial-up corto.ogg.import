@@ -11,5 +11,5 @@ dest_files=[ "res://.import/end dial-up corto.ogg-31bca3d9ae15099137070038ce603f
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
