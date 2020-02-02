@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Meditador.gd" type="Script" id=1]
 [ext_resource path="res://Resources/monk_focused.png" type="Texture" id=2]
 [ext_resource path="res://Particles/magic_03.png" type="Texture" id=3]
+[ext_resource path="res://Particles/magic_02.png" type="Texture" id=4]
 
 [sub_resource type="Curve" id=1]
 _data = [ Vector2( 0, 0.0124999 ), 0.0, 0.0, 0, 0, Vector2( 0.32, 0.7375 ), 1.76136, 1.76136, 0, 0, Vector2( 0.662857, 0.755682 ), -1.7759, -1.7759, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
@@ -62,4 +63,19 @@ polygon = PoolVector2Array( -5.68594, -6.52788, -42.6735, 9.46048, -48.5272, 30.
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "subebaja"
 anims/subebaja = SubResource( 2 )
+
+[node name="Flash" type="CPUParticles2D" parent="."]
+show_behind_parent = true
+emitting = false
+amount = 50
+texture = ExtResource( 4 )
+direction = Vector2( 0, 0 )
+spread = 180.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 150.0
+orbit_velocity = 1.0
+scale_amount = 0.73
+color = Color( 0.972549, 0.0117647, 0.0117647, 1 )
+hue_variation = 1.0
+hue_variation_random = 1.0
 [connection signal="area_entered" from="Culo" to="." method="_on_Culo_area_entered"]

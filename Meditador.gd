@@ -82,8 +82,8 @@ func _evolve(level):
 #		$Particulas.orbit_velocity = 0.15
 	if level>=4:
 		$Sprite.set_texture(zen_monk)
-		if level >= 7:
-			$Sprite.set_rotation(6)
+		if level >= 6:
+			$Flash.emitting = true
 	if level == 8:
 		emit_signal("win")
 	
