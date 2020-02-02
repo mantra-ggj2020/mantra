@@ -98,7 +98,7 @@ scale = Vector2( 0.501119, 0.574384 )
 texture = ExtResource( 2 )
 
 [node name="dios" type="Sprite" parent="."]
-position = Vector2( 504.151, 459.757 )
+position = Vector2( 504.151, 452.482 )
 rotation = -0.0174533
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 3 )
