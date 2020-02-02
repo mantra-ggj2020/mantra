@@ -7,6 +7,7 @@ extends Node
 var focusbar = 50
 var soullink = 0
 var level = 1
+var hitsToLevelUp = 4
 	
 
 # Called when the node enters the scene tree for the first time.
@@ -23,7 +24,7 @@ func _focus(concentracion):
 func _checkLink():
 	if focusbar == 0:
 		_drop()
-	if soullink == 2:
+	if soullink == hitsToLevelUp:
 		soullink = 0
 		level += 1
 		get_parent().get_node("Generamantra").nivel = level
