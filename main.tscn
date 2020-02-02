@@ -117,6 +117,7 @@ stream = ExtResource( 13 )
 
 [node name="Credito" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 14 )
+volume_db = 1.0
 [connection signal="fallen" from="Meditador" to="Progreso" method="_on_Meditador_fallen"]
 [connection signal="win" from="Meditador" to="Progreso" method="_on_Meditador_win"]
 [connection signal="pressed" from="Generamantra/AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
