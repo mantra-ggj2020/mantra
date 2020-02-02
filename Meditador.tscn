@@ -44,7 +44,7 @@ color = Color( 1, 0, 0, 1 )
 hue_variation_random = 1.0
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -2.71107, 0.834582 )
+position = Vector2( -2.71107, -1.82844 )
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 2 )
 __meta__ = {
