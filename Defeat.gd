@@ -5,14 +5,17 @@ extends Node2D
 # var a = 2
 # var b = "text"
 var quotes = ["No sos tus pensamientos sino aquello que los percibe",
-"Test",
-"Test2"]
+"Cae 7 veces, levantante 8",
+"Todo tiene su belleza, solo que no todos lo ven",
+"Haz siempre lo que te da miedo primero",
+"Actúa como si el fracazo fuese imposible",
+"Si te gusta el durazno bancate la pelusa",]
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
-	$Wisdom.text = quotes[rand_range(0,2)]
+	$Wisdom.text = quotes[rand_range(0,5)]
 	
 	pass # Replace with function body.
 
