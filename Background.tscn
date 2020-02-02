@@ -9,8 +9,8 @@
 [ext_resource path="res://dibujo 1 pintado.png" type="Texture" id=10]
 
 [sub_resource type="Gradient" id=1]
-offsets = PoolRealArray( 0.0748299, 0.414966 )
-colors = PoolColorArray( 0.0927124, 0.655225, 0.765625, 1, 0.98056, 0.99028, 0.992188, 1 )
+offsets = PoolRealArray( 0, 0.753247, 1 )
+colors = PoolColorArray( 0.0927124, 0.655225, 0.765625, 1, 0.996094, 0.994878, 0.988312, 1, 0.175781, 0.175781, 0.175781, 1 )
 
 [sub_resource type="GradientTexture" id=2]
 gradient = SubResource( 1 )
@@ -33,13 +33,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+position = Vector2( 512.296, 299.788 )
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 layer = 1
-scroll_limit_begin = Vector2( 0, -1000 )
-scroll_limit_end = Vector2( 0, 1000 )
+offset = Vector2( -600, 0 )
+transform = Transform2D( 1, 0, 0, 1, -600, 0 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0, 1 )
+motion_offset = Vector2( 0, 300 )
 motion_mirroring = Vector2( 0, 800 )
 
 [node name="Nube 1" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
@@ -49,6 +54,8 @@ texture = ExtResource( 5 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0, 0.5 )
+motion_offset = Vector2( 0, 300 )
+motion_mirroring = Vector2( 0, 800 )
 
 [node name="Nube 2" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2( 222.638, 114.744 )
@@ -57,6 +64,8 @@ texture = ExtResource( 4 )
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0, 0.3 )
+motion_offset = Vector2( 0, 300 )
+motion_mirroring = Vector2( 0, 800 )
 
 [node name="Nube 3" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
 position = Vector2( 740.858, 267.007 )
@@ -65,6 +74,8 @@ texture = ExtResource( 6 )
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0, 0.2 )
+motion_offset = Vector2( 0, 300 )
+motion_mirroring = Vector2( 0, 900 )
 
 [node name="Nube 4" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
 position = Vector2( 886.875, 151.2 )
@@ -72,7 +83,8 @@ scale = Vector2( 1.8983, 2.47729 )
 texture = ExtResource( 6 )
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2( 0, 1.5 )
+motion_scale = Vector2( 0, 0.7 )
+motion_offset = Vector2( 0, 300 )
 motion_mirroring = Vector2( 0, 800 )
 
 [node name="Nube 5" type="Sprite" parent="ParallaxBackground/ParallaxLayer5"]
@@ -82,6 +94,7 @@ texture = ExtResource( 4 )
 
 [node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0, 2 )
+motion_offset = Vector2( 0, 300 )
 motion_mirroring = Vector2( 0, 800 )
 
 [node name="Nube 6" type="Sprite" parent="ParallaxBackground/ParallaxLayer6"]
@@ -90,9 +103,9 @@ scale = Vector2( 2.7425, 3.79615 )
 texture = ExtResource( 5 )
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-position = Vector2( -1.43295, 598.387 )
+position = Vector2( -1.43295, 599.408 )
 rotation = -1.5708
-scale = Vector2( 2.18172, 1.71848 )
+scale = Vector2( 4.2889, 1.71848 )
 z_as_relative = false
 color = Color( 0.121569, 0.568627, 0.654902, 1 )
 texture = SubResource( 2 )

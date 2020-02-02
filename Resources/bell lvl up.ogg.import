@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bell lvl up.ogg-8bd9ea720e48e2ed7ca48c373523b86d.oggstr"
+
+[deps]
+
+source_file="res://Resources/bell lvl up.ogg"
+dest_files=[ "res://.import/bell lvl up.ogg-8bd9ea720e48e2ed7ca48c373523b86d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

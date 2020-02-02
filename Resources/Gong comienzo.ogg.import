@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Gong comienzo.ogg-1c7fc71b9644f785c6270829a6c74a46.oggstr"
+
+[deps]
+
+source_file="res://Resources/Gong comienzo.ogg"
+dest_files=[ "res://.import/Gong comienzo.ogg-1c7fc71b9644f785c6270829a6c74a46.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

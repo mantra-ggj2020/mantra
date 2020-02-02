@@ -7,8 +7,7 @@ extends Node
 var focusbar = 50
 var soullink = 0
 var level = 1
-
-
+	
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -43,3 +42,9 @@ func _drop():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_Meditador_fallen():
+	if focusbar <= 50:
+		get_tree().change_scene("res://Defeat.tscn")
+	pass # Replace with function body.

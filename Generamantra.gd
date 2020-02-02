@@ -33,6 +33,7 @@ func _on_Timer_timeout():
 	print("Timeout")
 	timer.queue_free()
 	generar(mantras[str(rng.randi_range(1,nivel))][randi()%mantras[str(nivel)].size()])
+	
 
 func _on_Mantra_completado():
 	print("onMantraCompletado")

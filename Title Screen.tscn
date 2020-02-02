@@ -16,12 +16,6 @@ __meta__ = {
 }
 
 [node name="Fondo" parent="." instance=ExtResource( 4 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 0.720703
-margin_top = -2.86606
-margin_right = 377.721
-margin_bottom = 318.134
 
 [node name="Menu" type="HBoxContainer" parent="."]
 anchor_left = 0.5
@@ -103,4 +97,11 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 512, 300 )
+current = true
+limit_left = -3
+limit_right = 1024
+limit_bottom = 600
 [connection signal="pressed" from="HBoxContainer/Botones/Start" to="Menu" method="_on_Start_pressed"]
