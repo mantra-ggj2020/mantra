@@ -58,6 +58,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+
+[node name="Startext" type="RichTextLabel" parent="Menu"]
+margin_left = 654.0
+margin_right = 654.0
+margin_bottom = 321.0
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[center]Start[/center]"
+text = "Start"
+
+
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchor_left = 0.461
 anchor_top = 0.411
