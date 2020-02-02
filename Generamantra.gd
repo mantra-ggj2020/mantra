@@ -14,7 +14,7 @@ onready var screen_size = get_viewport().size
 
 
 func _ready():
-	file.open("res://resources/mantras.json", file.READ)
+	file.open("res://Resources/mantras.json", file.READ)
 	mantras = parse_json(file.get_as_text())
 	file.close()
 	print(screen_size)
