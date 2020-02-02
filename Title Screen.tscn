@@ -5,15 +5,14 @@
 [ext_resource path="res://Resources/Config.png" type="Texture" id=3]
 [ext_resource path="res://Background.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Resources/Start.png" type="Texture" id=5]
+[ext_resource path="res://Resources/Khaleefa.otf" type="DynamicFontData" id=6]
 [ext_resource path="res://Menu.gd" type="Script" id=7]
 
-[sub_resource type="DynamicFontData" id=1]
-antialiased = false
-font_path = "res://Resources/Khaleefa.otf"
-
-[sub_resource type="DynamicFont" id=2]
-size = 44
-font_data = SubResource( 1 )
+[sub_resource type="DynamicFont" id=1]
+size = 50
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 6 )
 
 [node name="Pantalla De Inicio" type="Control"]
 anchor_right = 1.0
@@ -24,41 +23,41 @@ __meta__ = {
 
 [node name="Fondo" parent="." instance=ExtResource( 4 )]
 
-[node name="Menu" type="HBoxContainer" parent="."]
+[node name="Menu" type="Control" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -334.0
-margin_top = -209.0
-margin_right = 331.0
-margin_bottom = 112.0
-alignment = 1
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
 script = ExtResource( 7 )
+
+[node name="Startext" type="RichTextLabel" parent="Menu"]
+margin_top = 200.0
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 1, 0.984314, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center][tornado radius=5 freq=5]Type START[/tornado][/center]"
+text = "Type START"
+scroll_active = false
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_editor_description_": ""
 }
 
 [node name="Logo" type="TextureRect" parent="Menu"]
-margin_left = 10.0
-margin_right = 650.0
-margin_bottom = 321.0
+margin_left = 194.0
+margin_right = 834.0
+margin_bottom = 600.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Startext" type="RichTextLabel" parent="Menu"]
-anchor_top = 0.2
-anchor_bottom = 0.35
-margin_left = 99.0
-margin_top = 91.0
-margin_right = 654.0
-margin_bottom = 119.0
-custom_fonts/normal_font = SubResource( 2 )
-bbcode_enabled = true
-bbcode_text = "[center]Start[/center]"
-text = "Start"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchor_left = 0.461
