@@ -48,3 +48,7 @@ func _on_Meditador_fallen():
 	if focusbar <= 50:
 		get_tree().change_scene("res://Defeat.tscn")
 	pass # Replace with function body.
+
+
+func _on_Meditador_win():
+	get_tree().change_scene("res://Win.tscn")
