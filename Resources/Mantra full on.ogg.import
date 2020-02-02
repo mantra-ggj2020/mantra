@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Mantra full on.ogg-070e842c1d7ad4b3757c49e513d92f3a.oggstr"
+
+[deps]
+
+source_file="res://Resources/Mantra full on.ogg"
+dest_files=[ "res://.import/Mantra full on.ogg-070e842c1d7ad4b3757c49e513d92f3a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

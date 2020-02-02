@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Meditador.tscn" type="PackedScene" id=1]
 [ext_resource path="res://main.gd" type="Script" id=2]
@@ -12,6 +12,8 @@
 [ext_resource path="res://Resources/Gong comienzo.ogg" type="AudioStream" id=10]
 [ext_resource path="res://Resources/bell lvl down.ogg" type="AudioStream" id=11]
 [ext_resource path="res://Resources/bell lvl up.ogg" type="AudioStream" id=12]
+[ext_resource path="res://Resources/end glitch 2.ogg" type="AudioStream" id=13]
+[ext_resource path="res://Resources/Mantra full on.ogg" type="AudioStream" id=14]
 
 [sub_resource type="ShaderMaterial" id=1]
 
@@ -85,13 +87,10 @@ position = Vector2( 260.168, -82.7581 )
 scale = Vector2( 1.60244, 0.861128 )
 frames = SubResource( 2 )
 animation = "Grassy"
-frame = 2
+frame = 1
 playing = true
 
 [node name="Control" parent="." instance=ExtResource( 7 )]
-
-[node name="AnimatedSprite" parent="Control" index="3"]
-frame = 1
 
 [node name="dibujo 1 pintado" parent="Control" index="4"]
 visible = false
@@ -101,6 +100,7 @@ script = ExtResource( 8 )
 
 [node name="Musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
+volume_db = 10.0
 autoplay = true
 
 [node name="Gong" type="AudioStreamPlayer" parent="."]
@@ -111,6 +111,12 @@ stream = ExtResource( 12 )
 
 [node name="Leveldown" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
+
+[node name="End game" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+
+[node name="Credito" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
 [connection signal="pressed" from="Generamantra/AscendButton" to="Meditador" method="_on_AscendButton_pressed"]
 [connection signal="pressed" from="Generamantra/DescendButton" to="Meditador" method="_on_DescendButton_pressed"]
 [connection signal="fallen" from="Meditador" to="Progreso" method="_on_Meditador_fallen"]
